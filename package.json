@@ -1,0 +1,21 @@
+{
+  "name": "pomelo-admin-web-new",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "nacos-node": "~2.0.1",
+    "pomelo-admin": "git://github.com/silverera/pomelo-admin.git#v1.0.1",
+    "pomelo-logger": "git://github.com/silverera/pomelo-logger.git#v0.1.8",
+    "socket.io": "^1.7.3"
+  }
+}

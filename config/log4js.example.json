@@ -1,0 +1,90 @@
+{
+  "appenders": {
+    "console": {
+      "type": "console"
+    },
+    "crash-log": {
+      "type": "dateFile",
+      "filename": "./logs/crash.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "alwaysIncludePattern": true,
+      "backups": 0
+    },
+    "pomelo": {
+      "type": "dateFile",
+      "filename": "./logs/pomelo.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "alwaysIncludePattern": true,
+      "backups": 0
+    },
+    "nacos": {
+      "type": "dateFile",
+      "filename": "./logs/nacos.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "alwaysIncludePattern": true,
+      "backups": 0
+    },
+    "pomelo-admin": {
+      "type": "dateFile",
+      "filename": "./logs/pomelo-admin.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "alwaysIncludePattern": true,
+      "backups": 0
+    },
+    "exception": {
+      "type": "dateFile",
+      "filename": "./logs/exception.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "alwaysIncludePattern": true,
+      "backups": 0
+    }
+  },
+
+  "categories": {
+    "default": {
+      "appenders": [
+        "console"
+      ],
+      "level": "debug"
+    },
+    "pomelo": {
+      "appenders": [
+        "pomelo",
+        "console"
+      ],
+      "level": "debug"
+    },
+    "exception": {
+      "appenders": [
+        "exception",
+        "console"
+      ],
+      "level": "debug"
+    },
+    "nacos": {
+      "appenders": [
+        "nacos",
+        "console"
+      ],
+      "level": "warn"
+    }
+  },
+  "replaceConsole": true,
+  "lineDebug": true,
+  "reloadSecs": 180
+}
